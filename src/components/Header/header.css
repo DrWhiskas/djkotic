@@ -1,0 +1,44 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+    width: 10vw;
+    min-width: 100px;
+	position: fixed;
+	background-color: #6509ce;
+    align-items: center;
+
+}
+.header__logo{
+    font-size: calc(14px + .6vw);
+    color: #E6E6FA;
+}
+.header__links {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	gap: 2rem;
+    justify-content: center;
+    place-items: center;
+}
+.link, .header__profil__name{
+    font-size: calc(10px + .5vw);
+    color: #E6E6FA;
+    font-weight: bold;
+    transition: all ease-in-out .2s;
+}
+.link:hover{
+    color: #D8BFD8;
+}
+.header__profil{
+    display: flex;
+    flex-direction: column;
+}
+.header__profil__image{
+    border-radius: 100%;
+    height: 10vh;
+    min-height: 50px;
+    min-width: 50px;
+    align-self: center;
+    object-fit: cover;
+}
