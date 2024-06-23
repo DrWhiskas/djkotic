@@ -1,0 +1,10 @@
+.music-card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+.music-card__cover{
+    width: 50%;
+    object-fit: cover;
+}
