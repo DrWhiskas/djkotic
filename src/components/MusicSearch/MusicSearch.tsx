@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MusicCard from '../Header/MusicCard/MusicCard';
+import MusicCard from '../MusicCard/MusicCard'
 import { searchMusic } from '../../services/deezerService';
 import './musicSearch.css'
 

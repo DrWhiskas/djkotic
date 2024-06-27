@@ -5,17 +5,28 @@
 }
 .music-search__input {
 	width: 10%;
-	border: 3px solid #00b4cc;
+	border: 3px solid #6509ce;
+	background: none;
 	border-right: none;
 	padding: 5px;
 	height: 20px;
 	border-radius: 5px 0 0 5px;
 	outline: none;
-	color: #9dbfaf;
+	color: #E6E6FA;
 }
 .music-search__list{
     display: flex;
     margin-top: 1rem;
     flex-wrap: wrap;
     width: 90vw;
+}
+.music-search__btn{
+	padding: .7rem;
+	background-color: #6509ce;
+	color: #E6E6FA;
+	border: none;
+}
+.music-search__title{
+	color: #E6E6FA;
+	font-size: .8vw;
 }

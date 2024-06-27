@@ -21,6 +21,8 @@
 	gap: 2rem;
     justify-content: center;
     place-items: center;
+    position: relative;
+    top: -19%;
 }
 .link, .header__profil__name{
     font-size: calc(10px + .5vw);
@@ -34,6 +36,8 @@
 .header__profil{
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom: 3%;
 }
 .header__profil__image{
     border-radius: 100%;
