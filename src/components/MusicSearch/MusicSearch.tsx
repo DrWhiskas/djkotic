@@ -31,30 +31,18 @@ return (
 		<button className="music-search__btn" onClick={handleSearch}>
 			Search
 		</button>
-		{musics.map((music, key) => (
-			<li className="className='music-search__list" key={music.id}>
-				<MusicCard
-					title={music.title}
-					cover={music.album.cover}
-					artist={music.artist.name}
-				/>
-			</li>
-		))}
+		<div className="music-search__list">
+			{musics.map((music, key) => (
+				<li className="music-search__list__item" key={music.id}>
+					<MusicCard
+						title={music.title}
+						cover={music.album.cover}
+						artist={music.artist.name}
+					/>
+				</li>
+			))}
+		</div>
 	</div>
 );
 
 }
-/*
-<ul>
-			{musics.map((music) => (
-				<li key={music.id}>
-					<img
-						src={music.album.cover}
-						alt={music.title}
-						style={{ width: '50px', height: '50px' }}
-					/>
-					{music.title} by {music.artist.name}
-				</li>
-			))}
-		</ul>
-        */
