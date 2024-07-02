@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './musicCard.css';
 import { Link } from 'react-router-dom';
-import { Play } from 'lucide-react';
-import { Pause } from 'lucide-react';
+import { Play, CirclePlus, Pause } from 'lucide-react';
 
 interface MusicCardProps {
 	title?: string;
@@ -39,6 +38,9 @@ export default function MusicCard({ ...props }: MusicCardProps) {
 				<audio ref={audioRef} src={props.preview} />
 				<button className="music-card__play__btn" onClick={togglePlay}>
 					{isPlaying ? <Pause className="icon" /> : <Play className="icon" />}
+				</button>
+				<button className="music-card__play__btn">
+					<CirclePlus className="icon" />
 				</button>
 			</div>
 		</article>

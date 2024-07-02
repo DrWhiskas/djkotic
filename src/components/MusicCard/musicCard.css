@@ -28,14 +28,21 @@
 	transition: all ease-in-out 0.2s;
 }
 .music-card__play__btn {
-    background: black;
+    background: transparent;
     border-radius: 100%;
     padding: .5rem;
     border: none;
+	transition: all ease-in-out .2s;
 }
 .music-card:hover .music-card__play {
 	display: block;
 }
 .icon{
     color: white;
+	background: transparent;
+}
+.music-card__play__btn:hover{
+	cursor: pointer;
+
+	background-color: #7e11fc;
 }
